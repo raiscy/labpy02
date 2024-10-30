@@ -1,7 +1,7 @@
 # labpy02 
 Modul Praktikum 2 
 
-Latihan 3 : Buat Program Python Untuk Kasus ini 
+# Latihan 3 : Buat Program Python Untuk Kasus ini 
 # Kasus 1 : Program Pemesanan Tiket Bioskop 
 Buat program yang menghitung harga tiket bioskop. Tiket reguler berharga Rp50.000, sedangkan tiket VIP berharga Rp100.000. Jika user memiliki kartu member, mereka mendapatkan diskon 20% dari harga tiket. Program ini harus meminta tipe tiket dan status member dari user, lalu menghitung total harga yang harus dibayar. Dengan menggunakan if else dan operator ternary
 
@@ -105,6 +105,44 @@ PENJELASAN PROGRAM KALKULATOR SEDERHANA
 7. Menampilkan hasil perhitungan
 8. Selesai. 
 
+# Latihan 1 : Membuat Program Menentukan Nilai Akhir 
+    #!/usr/bin/python3
+
+    # Mengambil input dari pengguna
+    nama = input("Masukkan nama: ")
+    uts = input("Masukkan nilai UTS: ")
+    uas = input("Masukkan nilai UAS: ")
+    tugas = input("Masukkan nilai Tugas: ")
+
+    # Menghitung nilai akhir
+    akhir = (int(tugas) * 0.2) + (int(uts) * 0.4) + (int(uas) * 0.4)
+
+    # Menentukan keterangan lulus atau tidak
+    keterangan = ("TIDAK LULUS", "LULUS")[akhir > 60.0]
+
+    # Menentukan nilai huruf
+    if akhir > 80:
+        huruf = "A"
+    elif akhir > 70:
+        huruf = "B"
+    elif akhir > 50:
+        huruf = "C"
+    elif akhir > 40:
+        huruf = "D"
+    else:
+        huruf = "E"
+
+    # Menampilkan hasil
+    print("\nNama :", nama)
+    print("Nilai UTS :", uts)
+    print("Nilai UAS :", uas)
+    print("Nilai Tugas :", tugas)
+    print("Nilai Akhir :", akhir)
+    print("\nNilai Huruf :", huruf)
+    print("Keterangan :", keterangan)
+
+![kode menentukan nilai akhir](https://github.com/user-attachments/assets/659f1c83-b9cd-4534-8785-53a252602af6)
+![Screenshot 2024-10-29 124125](https://github.com/user-attachments/assets/40ae6720-fb78-4e5c-80a9-438b66035842)
 
 
 
