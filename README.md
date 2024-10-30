@@ -2,7 +2,7 @@
 Modul Praktikum 2 
 
 Latihan 3 : Buat Program Python Untuk Kasus ini 
-Kasus 1 : Program Pemesanan Tiket Bioskop 
+# Kasus 1 : Program Pemesanan Tiket Bioskop 
 Buat program yang menghitung harga tiket bioskop. Tiket reguler berharga Rp50.000, sedangkan tiket VIP berharga Rp100.000. Jika user memiliki kartu member, mereka mendapatkan diskon 20% dari harga tiket. Program ini harus meminta tipe tiket dan status member dari user, lalu menghitung total harga yang harus dibayar. Dengan menggunakan if else dan operator ternary
 
     def hitung_harga_tiket():
@@ -47,7 +47,65 @@ PROSES INPUT DATA
 HASIL OUTPUT DATA
 ![hasil tiket bioskop](https://github.com/user-attachments/assets/c8b07090-851e-4471-bad3-30b0c9a8b0a6)
 
-PENJELASAN PROGRAM PEMESANAN TIKET BIOSKOP
+PENJELASAN PROGRAM PEMESANAN TIKET BIOSKOP : 
+1. Kata “Start” dimana proses akan dimulai dan proses input sudah berjalan.
+2. Pemilihan antara opsi yang telah diberi tau, Reguler atau VIP
+3. Pemeriksaan opsi apakah tiket yang di miiliki Reguler atau bukan
+4. Jika tiket yang dimiliki reguler maka harga tiket adalah 50.000 tetapi jika tiket VIP harga menjadi 100.000
+5. Cek status apakah pengguna memiliki akses member atau tidak
+6. Jika pengguna memiliki akses member maka tiket akan diberikan diskon sebesar 20% dari harga yang di tentukan, baik reguler maupun VIP
+7. Menampilkan total harga setelah adanya diskon atau tidak
+8. Selesai. 
+
+# Kasus 2 : Program Kalkulator Sederhana
+Buat program kalkulator yang menerima dua angka dan satu operator aritmatika dari pengguna (penjumlahan, pengurangan, perkalian, atau pembagian). Program akan menghitung hasil sesuai dengan operator yang dipilih. Dengan menggunakan if elif else untuk menentukan operasi aritmatika
+
+    def kalkulator():
+    # Menerima input dari pengguna
+    angka1 = float(input("Masukkan angka pertama: "))
+    angka2 = float(input("Masukkan angka kedua: "))
+    operator = input("Masukkan operator (+, -, *, /): ")
+
+    # Menghitung hasil berdasarkan operator yang dipilih
+    if operator == "+":
+        hasil = angka1 + angka2
+        print(f"Hasil penjumlahan: {hasil}")
+    elif operator == "-":
+        hasil = angka1 - angka2
+        print(f"Hasil pengurangan: {hasil}")
+    elif operator == "*":
+        hasil = angka1 * angka2
+        print(f"Hasil perkalian: {hasil}")
+    elif operator == "/":
+        if angka2 != 0:
+            hasil = angka1 / angka2
+            print(f"Hasil pembagian: {hasil}")
+        else:
+            print("Error: Pembagian dengan nol tidak diperbolehkan.")
+    else:
+        print("Error: Operator tidak valid.")
+
+    # Memanggil fungsi kalkulator
+    kalkulator()
+
+PROSES INPUT DATA
+![kode python kalkulator sederhana](https://github.com/user-attachments/assets/0f4d3142-452b-4740-ad99-ebcf1b9b3049)
+![kode kalkulator sederhana](https://github.com/user-attachments/assets/e9c53f25-a2d2-4c84-8985-44bd7cbc9204)
+
+HASIL OUTPUT 
+![hasil kalkulator sederhana](https://github.com/user-attachments/assets/0e69a719-88f5-4d92-9c79-6882d3e48c68)
+
+PENJELASAN PROGRAM KALKULATOR SEDERHANA
+1. Kata “Start” dimana proses akan dimulai dan proses input sudah berjalan.
+2. Menginput angka1 yang diinginkan
+3. Menginput angka2 yang diinginkan
+4. Menginput operator yang berisi +,-,/ atau *
+5. Menggunakan stuktur percabangan untuk memeriksa operator yang digunakan
+6. Memeriksa apakah angka2 = 0 Jika ya, tampilkan pesan error. Jika tidak, lakukan pembagian. Jika operator tidak valid: tampilkan pesan error
+7. Menampilkan hasil perhitungan
+8. Selesai. 
+
+
 
 
 
