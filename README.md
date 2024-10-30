@@ -144,6 +144,41 @@ PENJELASAN PROGRAM KALKULATOR SEDERHANA
 ![kode menentukan nilai akhir](https://github.com/user-attachments/assets/659f1c83-b9cd-4534-8785-53a252602af6)
 ![Screenshot 2024-10-29 124125](https://github.com/user-attachments/assets/40ae6720-fb78-4e5c-80a9-438b66035842)
 
+PENJELASAN PROGRAM MENENTUKAN NILAI AKHIR : 
+1. Menentukan nilai dan nama lalu memasukkan nilai yang telah diinginkan yang berisi nilai UAS, UTS dan TUGAS
+2. Menghitung nilai akhir berdasarkan bobot yang telah ditentukan untuk tugas (20%), UTS (40%), dan UAS (40%). Nilai akhir dihitung dengan mengalikan nilai masing-masing dengan bobotnya dan menjumlahkan hasilnya.
+3. enggunakan serangkaian pernyataan if, elif, dan else untuk menentukan nilai huruf berdasarkan nilai akhir. Ini memberikan rentang nilai untuk setiap huruf, di mana:
+    A: lebih dari 80
+    B: lebih dari 70
+    C: lebih dari 50
+    D: lebih dari 40
+    E: 40 atau kurang
+4. Menampilkan hasil kepada pengguna. Ini mencetak nama, nilai UTS, UAS, Tugas, nilai akhir (dibulatkan ke dua desimal), nilai huruf, dan keterangan lulus atau tidak.
+5. Selesai, data akan membulatkan nilai
 
+# Latihan 2 : Membuat Program Menampilkan Status Gaji Karyawan
 
+    gaji = int(input("Masukkan gaji:"))
+    berkeluarga = (False, True)[input("Sudah berkeluarga? (Y/T)") == "Y"]
+    punya_rumah = (False, True)[input("Punya rumah? (Y/T)") == "Y"]
+    
+    if gaji > 3000000:
+        print ("Gaji sudah diatas UMR")
+        if berkeluarga:
+            print ("Wajib ikutan asuransi dan menabung untuk pensiun")
+        else:
+            print ("Tidak perlu ikutan asuransi")
+        if punya_rumah:
+            print ("wajib bayar pajak rumah")
+        else:
+            print ("tidak wajib bayar pajak rumah")
+    else:
+        print ("Gaji belum UMR")
+        
+![Screenshot 2024-10-29 155641](https://github.com/user-attachments/assets/cf43d0cf-fe09-4edc-9eef-4e8012765fa1)
 
+PENJELASAN PROGRAM MENAMPILKAN STATUS GAJI KARYAWAN : 
+1. Memasukan nilai gaji
+2. Memasukan apakah sudah berkeluarga atau belum. Jika sudah maka ketik "y" jika belum maka ketik "t"
+3. Ketika sudah memiliki rumah menginput "y", jika belum "t"
+4. Jika gaji yang dimasukkan di > 3 juta, sudah bekeluarga dan sudah memiliki rumah maka termasuk diatas UMR. Jika gaji yang dimasukkan < 3 juta, sudah bekeluarga dan tidak memiliki rumah termasuk belum UMR. Dan jika gaji > 3 juta, sudah berkeluarga namun belum memiliki rumah maka Wajib ikut asuransi dan menabung untuk pensiun dan tidak membayar pajak. 
